@@ -623,7 +623,7 @@
 				<br>
 					<input type="radio" name="72" value="yes"> Yes
 					<br> If yes, please specify how much in % 
-					<input type="text" name="72" value="0"> % 
+					<input type="text" name="72" value="0" maxlength="3"> % 
 					<br>
 					<input type="radio" name="72" value="no"> No
 				<br>
@@ -689,6 +689,46 @@
 						<td align="center"> <input type="radio" name="82" value="idk"> </td>
 					</tr>
 				</table>
+				<select>
+				<legend> Consumables </legend>
+					<label> 83. What is the number of pages printed per day per employee? &lpar;A4 equivalent&rpar;</label>
+					<br>
+						<input type="radio" name="83" value="1"> Less than 10
+						<input type="radio" name="83" value="20"> From 10 to 20
+						<input type="radio" name="83" value="30"> From 20 to 30
+						<input type="radio" name="83" value="30+"> More than 30
+						<input type="radio" name="83" value="idk"> I don't know
+					<br>
+					<label> 85. Do you organize the separate collection of waste cartridges / toners? </label>
+					<br>
+						<input type="radio" name="85" value="yesri"> Yes, to a repackaging industry
+						<input type="radio" name="85" value="yesrc"> Yes, towards a recycling channel &lpar;destruction&rpar;
+						<input type="radio" name="85" value="no"> No, no separate collection device is planned
+					<br>
+					<label> 86. Do you prefer the use of recycled paper? </label>
+					<br>
+						<input type="checkbox" name="86" value="yesvp"> Yes, our paper is made from virgin paste
+						<input type="checkbox" name="86" value="yesmp"> Yes, mixed paper
+						<input type="checkbox" name="86" value="yesr"> Yes, 100% recycled
+						<input type="checkbox" name="86" value="no"> I'm not paying attention
+					<br>
+					<label> 87. Do you choose paper? </label>
+					<br>
+						<input type="checkbox" name="87" value="yesfsc"> Yes, FSC
+						<input type="checkbox" name="87" value="yespefc"> Yes,PEFC
+						<input type="checkbox" name="87" value="yesba"> Yes, Blue Angel
+						<input type="checkbox" name="87" value="yesel"> Yes, European Label
+						<input type="checkbox" name="87" value="yeso"> Yes, other
+						<input type="text" name="87" value="yesotext" maxlength="20">
+						<input type="checkbox" name="87" value="no"> I'm not paying attention
+					<br>
+					<label> 88. Do you organize the separate collection of waste paper for recycling? </label>
+					<br>
+						<input type="radio" name="88" value="yes"> Yes
+						<input type="radio" name="88" value="no"> No
+						<input type="radio" name="88" value="idk"> I don't know
+					<br>
+				</select>
 				</fieldset>
 			
 </form>
