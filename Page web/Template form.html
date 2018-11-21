@@ -755,3 +755,18 @@
 </form>
 </body>
 </html>
+
+<script>
+function passer4(){
+	var x = document.getElementsByName("4").value;
+	if (x=="no"){
+		document.getElementsByName("12").disabled=false;
+	}
+	else(){
+	var i;
+		for(i=4; i<Number(12) ;i++){
+			document.getElementsByName(String(i)).disabled=false;
+		}
+	}
+}
+</script>
