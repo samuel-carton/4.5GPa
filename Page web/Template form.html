@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR">
+<head>
+<meta charset="utf-8" />
+<title>Questionnaire AGIT</title>
+</head>
+<body>
+<h1>Présentation du questionnaire</h1>
+With the support of ADEME, the Ministry of Ecology, Energy and the Sea and the Ministry of Economy and Finance, the association AGIT (Alliance for Green IT) and the eco-organizations of the recycling network of Waste Electrical and Electronic Equipment (WEEE) organize a survey to assess the deposits of computer and office equipment present in companies and more generally on the maturity of companies in France in the use of eco-responsible digital services.
+The duration of the questionnaire is estimated at 15 minutes if you are able to answer questions directly.
+You can return at any time on the questionnaire, answer in several times, your previous answers are recorded. In case of modification, only the last answer will be taken into account.
+You can submit this questionnaire to several people in your organization. All you have to do is simply share the link to the questionnaire.
+Thank you for participating in this survey. Your answer is invaluable to us to constitute the most representative sample of the companies in France.
+<h1>Questionnaire</h1>
+
+<form name="questionnaire_agit" action="#" method="get">
+<fieldset>
+				<legend>Your company</legend>
+				<label>1. In which sector of activity is your company active? (linked with your APE code)</label>
+				<select name="activity_sector">
+					<option value="industry">Industry</option>
+					<option value="business">Business</option>
+					<option value="info_comm">Information and Communication</option>
+					<option value="other_services">Other services activities</option>
+					<option value="all_other_activities">All other activties (financial, agricultural activities...)</option>
+					<option value="construction">Construction</option>
+					<option value="public_sector">Public sector</option>
+					<option value="sstassa">Specialized, Scientific and Technical or Administrative and Support Services Activities</option>
+					<option value="real_estate">Real Estate</option>
+				</select>
+				<label>2. What is the number of </label>
+				<select name="activity_sector">
+					<option value="industry">Industry</option>
+					<option value="business">Business</option>
+					<option value="info_comm">Information and Communication</option>
+					<option value="other_services">Other services activities</option>
+					<option value="all_other_activities">All other activties (financial, agricultural activities...)</option>
+					<option value="construction">Construction</option>
+					<option value="public_sector">Public sector</option>
+					<option value="sstassa">Specialized, Scientific and Technical or Administrative and Support Services Activities</option>
+					<option value="real_estate">Real Estate</option>
+				</select>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Adresse</legend>
+				<label>N° :</label>
+				<input type="text" name="h_adr_num" value="" size="5" />
+				<br />
+				<label>Rue :</label>
+				<input type="text" name="h_adr_rue" value="" size="25" />
+				<br />
+				<label>Code postal :</label>
+				<input type="text" name="h_adr_cp" value="" size="5" />
+				<br />
+				<label>Ville :</label>
+				<select name="h_adr_ville">
+					<option value="0">&lt;choisir&gt;</option>
+					<option value="1">Angers</option>
+					<option value="2">Avrillé</option>
+					<option value="3">Beaucouzé</option>
+					<option value="4">Les Ponts de Cé</option>
+					<option value="5">Montreuil-Juigné</option>
+				</select>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Situation familiale</legend>
+				<label>Statut :</label>
+				<input type="radio" name="h_sitf_statut" value="marie"> marié
+				&nbsp;
+				<input type="radio" name="h_sitf_statut" value="divorce"> divorcé
+				&nbsp;
+				<input type="radio" name="h_sitf_statut" value="veuf"> veuf
+				<br />
+				<label>Nombre d'enfants :</label>
+				<select name="h_sitf_enfants">
+					<option value="0">sans</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4 et plus</option>
+				</select>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Habitation</legend>
+				<label>Type :</label>
+				<input type="radio" name="h_hab_type" value="1" checked="checked"> maison
+				&nbsp;
+				<input type="radio" name="h_hab_type" value="2"> appartement
+				&nbsp;
+				<input type="radio" name="h_hab_type" value="3"> sans domicile
+				<br />
+				<label>Options</label>
+				<input type="checkbox" name="h_hab_options[]" value="garage">garage
+				&nbsp;
+				<input type="checkbox" name="h_hab_options[]" value="veranda">véranda
+				&nbsp;
+				<input type="checkbox" name="h_hab_options[]" value="piscine">piscine
+				&nbsp;
+				<br />
+</form>
+   
+</body>
+</html>
