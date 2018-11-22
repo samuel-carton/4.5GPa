@@ -6,17 +6,19 @@
 	</head>
 	<body>
 	<script>
-				window.addEventListener("change", function () {
+				/*var a = document.getElementById("4.2");
+				a.addEventListener("change", function () {
 					var x = document.getElementById("4.2").value;
+					console.log(a);
 					console.log(x);
-				});
-				function passer4() {
+				});*/
+				//function passer4() {
 					//var x = document.getElementsByName("4").value;
 					//console.log(x);
 				//if (x=="no"){
-					document.getElementsByName("12").disabled=false;
+					//document.getElementsByName("12").disabled=false;
 					//document.getElementById("12.2").disabled = false;
-					console.log("test");
+					//console.log("test");
 				//}
 				//else{
 					/*var i;
@@ -25,7 +27,7 @@
 							console.log(i);
 						}*/
 					//}
-				}
+				//}
 
 				function passer12(){
 					var x = document.getElementsByName("12").value;
@@ -50,7 +52,7 @@
 				}
 				function passer39(){
 					var x = document.getElementsByName("39").value;
-					if ((x=="no") || (x=="no_answer"){
+					if ((x=="no") || (x=="no_answer")){
 						document.getElementsByName("42").disabled=false;
 						}
 					else{
@@ -103,7 +105,7 @@
 				</br>
 					<input id="4.1" type="radio" name="4" value="yes"/>Yes <!--Passer à la question 5 si oui-->
 					&nbsp;
-					<input id="4.2" type="radio" name="4" value="no" onchange="passer4()" />No <!--Passer à la question 11 si non-->
+					<input id="4.2" type="radio" name="4" value="no" />No <!--Passer à la question 11 si non-->
 					&nbsp;
 					</br>
 				<label>5. What is the number of users of your digital services?</label>
@@ -182,6 +184,14 @@
 							&nbsp;	
 				</fieldset>		
 </form>
+<script>
+var a = document.getElementById("4.2");
+				a.addEventListener("change", function () {
+					var x = document.getElementById("4.2").value;
+					console.log(a);
+					console.log(x);
+				});
+</script>
 </body>
 </html>
 
