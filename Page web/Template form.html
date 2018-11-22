@@ -755,3 +755,81 @@
 </form>
 </body>
 </html>
+
+<script>
+onchange="passer4()"
+onchange="passer12()"
+onchange="passer13()"
+onchange="passer39()"
+onchange="passer62()"
+function passer4(){
+	var x = document.getElementsByName("4").value;
+	if (x=="no"){
+		document.getElementsByName("12").disabled=false;
+	}
+	else(){
+	var i;
+		for(i=4; i<13;i++){
+			document.getElementsByName(String(i)).disabled=false;
+		}
+	}
+}
+
+function passer12(){
+	var x = document.getElementsByName("12").value;
+	if (x=="closet"){
+		document.getElementsByName("50").disabled=false;
+	}
+	else(){
+		document.getElementsByName("13").disabled=false;
+	}
+}
+function passer13(){
+	var x = document.getElementsByName("13").value;
+	if (x=="closet"){
+		document.getElementsByName("31").disabled=false;
+	}
+	else(){
+	var i;
+		for(i=13; i<32;i++){
+			document.getElementsByName(String(i)).disabled=false;
+		}
+	}
+}
+function passer39(){
+	var x = document.getElementsByName("39").value;
+	if ((x=="no") or (x=="no_answer"){
+		document.getElementsByName("42").disabled=false;
+	}
+	else(){
+	var i;
+		for(i=40; i<43;i++){
+			document.getElementsByName(String(i)).disabled=false;
+		}
+	}
+}
+function passer62(){
+	var x = document.getElementsByName("62").value;
+	if (x=="no"){
+		document.getElementsByName("70").disabled=false;
+	}
+	else(){
+	var i;
+		for(i=63; i<70;i++){
+			document.getElementsByName(String(i)).disabled=false;
+		}
+	}
+}
+function passer(qpassee, jusqua, value){
+	document.getElementsByName(qpassee).value;
+	if (x=="no"){
+		document.getElementsByName("70").disabled=false;
+	}
+	else(){
+	var i;
+		for(i=63; i<70;i++){
+			document.getElementsByName(String(i)).disabled=false;
+		}
+	}
+}
+</script>
