@@ -757,6 +757,11 @@
 </html>
 
 <script>
+onchange="passer4()"
+onchange="passer12()"
+onchange="passer13()"
+onchange="passer39()"
+onchange="passer62()"
 function passer4(){
 	var x = document.getElementsByName("4").value;
 	if (x=="no"){
@@ -805,6 +810,18 @@ function passer39(){
 }
 function passer62(){
 	var x = document.getElementsByName("62").value;
+	if (x=="no"){
+		document.getElementsByName("70").disabled=false;
+	}
+	else(){
+	var i;
+		for(i=63; i<70;i++){
+			document.getElementsByName(String(i)).disabled=false;
+		}
+	}
+}
+function passer(qpassee, jusqua, value){
+	document.getElementsByName(qpassee).value;
 	if (x=="no"){
 		document.getElementsByName("70").disabled=false;
 	}
