@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+	<html dir="ltr" lang="fr-FR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Questionnaire AGIT</title>
+	</head>
+	<body>
+		
+		<h1>Presentation of the questionnaire</h1>
+			With the support of ADEME, the Ministry of Ecology, Energy and the Sea and the Ministry of Economy and Finance, the association AGIT (Alliance for Green IT) and the eco-organizations of the recycling network of Waste Electrical and Electronic Equipment (WEEE) organize a survey to assess the deposits of computer and office equipment present in companies and more generally on the maturity of companies in France in the use of eco-responsible digital services.
+			The duration of the questionnaire is estimated at 15 minutes if you are able to answer questions directly.
+			You can return at any time on the questionnaire, answer in several times, your previous answers are recorded. In case of modification, only the last answer will be taken into account.
+			You can submit this questionnaire to several people in your organization. All you have to do is simply share the link to the questionnaire.
+			Thank you for participating in this survey. Your answer is invaluable to us to constitute the most representative sample of the companies in France.
+		<h1>Questionnaire</h1>
+
+		<form name="questionnaire_agit" action="#" method="post">
+			<fieldset>
+			<legend>Your company</legend>
+				
+				
+				<label>4. Do you develop digital services for international or external use (sales to customer)?</label>
+				</br>
+					<input id="4.1" type="radio" name="4" value="yes"/>Yes <!--Passer à la question 5 si oui-->
+					&nbsp;
+					<input id="4.2" type="radio" name="4" value="no" onchange="passer4()" />No <!--Passer à la question 11 si non-->
+					&nbsp;
+					</br>
+				<label>5. What is the number of users of your digital services?</label>
+					<input type="text" name="users5" size="10" disabled=false  />
+			<p>Ecoconception good practices</p>
+				<label>6. Do you apply the rules and best prectices for digital accessibility?</label>
+				</br>
+					<input type="radio" name="6" value="yes" disabled />Yes
+					&nbsp;
+					<input type="radio" name="6" value="no" disabled />No
+					&nbsp;
+					<input type="radio" name="6" value="dontknow" disabled />I don't know
+					&nbsp;
+				</br>
+				<label>7. Have you optimized the states and printouts in your application tools (reduced number of pages when printing, ink consumption...)?</label>
+				</br>
+					<input type="radio" name="7" value="yes" disabled />Yes
+					&nbsp;
+					<input type="radio" name="7" value="no" disabled />No
+					&nbsp;
+					<input type="radio" name="7" value="dontknow" disabled />I don't know
+					&nbsp;
+				</br>
+				<label>8. Do you integrate the principles of the ecodesign of digital services?</label>
+				</br>
+					<input type="radio" name="8" value="yes" disabled />Yes
+					&nbsp;
+					<input type="radio" name="8" value="no" disabled />No
+					&nbsp;
+					<input type="radio" name="8" value="dontknow" disabled />I don't know
+					&nbsp;
+				</br>
+				<label>9. Do you use a modular application infrastructure?</label>
+				</br>
+					<input type="radio" name="9" value="yes" disabled />Yes
+					&nbsp;
+					<input type="radio" name="9" value="no" disabled />No
+					&nbsp;
+					<input type="radio" name="9" value="dontknow" disabled />I don't know
+					&nbsp;
+				</br>
+				<label>10. Do you do a design review at the end of your application's development?</label>
+				</br>
+					<input type="radio" name="10" value="yes" disabled />Yes
+					&nbsp;
+					<input type="radio" name="10" value="no" disabled />No
+					&nbsp;
+					<input type="radio" name="10" value="dontknow" disabled />I don't know
+					&nbsp;
+				</br>
+			</fieldset>
+			<fieldset>
+			<legend>Infrastructures</legend>
+				<fieldset>
+				<legend>Information system</legend>
+					<label>11. What is the overall storage volume of your corporate data (centralized on external hard drives, centralized server, NAS, SAN ...) in Terabytes (TB) useful?</label>
+						</br>
+							<input type="radio" name="11" value="dontknow" disabled />I don't know
+							&nbsp;
+							<input type="radio" name="11" value="no_answer" disabled />I don't want to answer
+							&nbsp;
+							<input type="radio" name="11" value="other_answer" disabled />
+							<input type="text" name="storage_volume11" maxlength="6" disabled />&nbsp; TB
+						</br>
+					<label>12. Do you have a server or do you only work with one or more workstations?</label>
+						</br>
+							<input id="12.1" type="radio" name="12" value="workstations" disabled />We work with workstation (s), without centralized physical server
+							&nbsp;
+							<input id="12.2" type="radio" name="12" value="centralized_server" disabled />We have (at least) a centralized physical server
+							&nbsp;
+						</br>	
+					<label>13. Do you have a dedicated room, simple room or cupboard with bay dedicated to your IT infrastructure?</label>
+						</br>
+							<input type="radio" name="13" value="closet"/>A closet or a room without any specific system							&nbsp;
+							<input type="radio" name="13" value="dedicated_room"/>We have (at least) a centralized physical server
+							&nbsp;	
+				</fieldset>		
+</form>
+</body>
+</html>
+
+<script>
+				function passer4(){
+					var x = document.getElementById("4.2").value;
+					console.log(x);
+					if (x=="no"){
+						document.getElementById("12.1").disabled=false;
+						document.getElementById("12.2").disabled = false;
+						console.log("test");
+					}
+					else{
+					/*var i;
+						for(i=4; i<13;i++){
+							document.getElementById(String(i).).disabled=false;
+							console.log(i);
+						}*/
+					}
+				}
+
+				function passer12(){
+					var x = document.getElementsByName("12").value;
+					if (x=="closet"){
+						document.getElementsByName("50").disabled=false;
+					}
+					else{
+						document.getElementsByName("13").disabled=false;
+					}
+				}
+				function passer13(){
+					var x = document.getElementsByName("13").value;
+					if (x=="closet"){
+						document.getElementsByName("31").disabled=false;
+					}
+					else{
+					var i;
+						for(i=13; i<32;i++){
+							document.getElementsByName(String(i)).disabled=false;
+						}
+					}
+				}
+				function passer39(){
+					var x = document.getElementsByName("39").value;
+					if ((x=="no") or (x=="no_answer"){
+						document.getElementsByName("42").disabled=false;
+					}
+					else{
+					var i;
+						for(i=40; i<43;i++){
+							document.getElementsByName(String(i)).disabled=false;
+						}
+					}
+				}
+				function passer62(){
+					var x = document.getElementsByName("62").value;
+					if (x=="no"){
+						document.getElementsByName("70").disabled=false;
+					}
+					else{
+					var i;
+						for(i=63; i<70;i++){
+							document.getElementsByName(String(i)).disabled=false;
+						}
+					}
+				}
+				function passer(qpassee, jusqua, value){
+					document.getElementsByName(qpassee).value;
+					if (x=="no"){
+						document.getElementsByName("70").disabled=false;
+					}
+					else{
+					var i;
+						for(i=63; i<70;i++){
+							document.getElementsByName(String(i)).disabled=false;
+						}
+					}
+				}
+</script>
+
