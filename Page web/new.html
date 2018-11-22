@@ -172,9 +172,9 @@
 						</br>
 					<label>12. Do you have a server or do you only work with one or more workstations?</label>
 						</br>
-							<input id="12.1" type="radio" name="12" value="workstations" disabled />We work with workstation (s), without centralized physical server
+							<input id="12.1" type="radio" name="12" value="workstations" disabled=true />We work with workstation (s), without centralized physical server
 							&nbsp;
-							<input id="12.2" type="radio" name="12" value="centralized_server" disabled />We have (at least) a centralized physical server
+							<input id="12.2" type="radio" name="12" value="centralized_server" disabled=true />We have (at least) a centralized physical server
 							&nbsp;
 						</br>	
 					<label>13. Do you have a dedicated room, simple room or cupboard with bay dedicated to your IT infrastructure?</label>
@@ -188,8 +188,9 @@
 var a = document.getElementById("4.2");
 				a.addEventListener("change", function () {
 					var x = document.getElementById("4.2").value;
-					console.log(a);
 					console.log(x);
+					document.getElementById("12.1").disabled = false;
+					document.getElementById("12.2").disabled = false;
 				});
 </script>
 </body>
