@@ -116,7 +116,7 @@
                 }
                 i++;
             }
-            r_enabler(r_primaryQuestion[i],r_questionTable[i]); //cause problèmes : appel for (enabler) puis directement for (r_enabler)
+            r_enabler(r_primaryQuestion[i],r_questionTable[i]);
         });
     }
 	
